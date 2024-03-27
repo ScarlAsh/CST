@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>custom-video-controls</title>
+  </head>
+  <body>
+    <main>
+      <video id="video" poster="./image/frozen.jpg" width="500" height="500">
+        <source src="./video/frozen.mp4">
+      </video>
+      <section id="controls">
+        <div>
+          <input type="range" min="0" step ="1" id="durationRange" value="0"/>
+          <span id="current">0</span>/<span id="duration"></span>
+        </div>
+        <div>
+          <input type="button" value="Play" id="play" />
+          <input type="button" value="Stop" id="stop" />
+          <input type="button" value="&lt;&lt;" id="reset" />
+          <input type="button" value="&lt;" id="back" />
+          <input type="button" value="&gt;" id="forward" />
+          <input type="button" value="&gt;&gt;" id="end" />
+          <input type="range" min="0" max="1" step=".2" id="vol" value="0" />
+          <input type="button" value="Mute" id="mute" />
+        </div>
+        <div>
+          <label for="speed">Speed</label>
+          <input type="range" id="speed" min=".2" max="16" step=".5" value="0" />
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

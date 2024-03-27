@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            background-color: rgb(193, 114, 11);
+            display: grid;
+            grid-template-areas: 
+            "nav nav nav"
+            "as . ass"
+            "as . ass"
+            "art art art"
+            "foot foot foot";
+            /* min-height: 600px; */
+            /* grid-auto-rows: minmax(200px,auto); */
+        }
+        nav{
+            background-color: aquamarine;
+            grid-area: nav;
+        }
+        aside{
+            background-color: blue;
+            grid-area: as;
+        }
+        .ass{
+            background-color: blue;
+            grid-area: ass;
+        }
+        article{
+            background-color: cadetblue;
+            grid-area: art;
+        }
+        footer{
+            background-color: aquamarine;
+            grid-area: foot;
+        }
+        @media (max-width:500px){
+            /* css file  */
+            body{
+                background-color: blueviolet;
+            }
+        }
+        @media (min-width:500.999999px) and (max-width:700px){
+            body{
+                background-color: aqua;
+            }
+
+            nav{
+                background-color: brown;
+                color: white;
+            }
+        }
+        @media (min-width:700.9999px) and (max-width:900px){
+            body{
+                background-color: pink;
+            }
+        }
+        @media (min-width:900.99999px){
+            body{
+                background-color: chocolate;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <nav>nav</nav>
+        <aside>aside</aside>
+        <aside class="ass">aside</aside>
+        <article>article</article>
+        <footer>footer</footer>
+    </section>
+</body>
+</html>

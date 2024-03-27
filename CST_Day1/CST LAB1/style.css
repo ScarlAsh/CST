@@ -1,0 +1,42 @@
+*{
+    background-color:rgb(144, 122, 122) ;
+}
+
+#main-container{
+    width: 30%;
+    margin:auto;
+    margin-top: 10%;
+}
+
+form{
+    margin-top: 20px;
+    margin:auto;
+    width:30%;
+}
+
+table{
+    border: 3px solid black;
+    width:100%;
+}
+td{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+select{
+    width:50%;
+}
+#login-form{
+    margin-top: 100px;
+    width: 30%;
+    margin: auto;
+}
+#login-form form{
+    width:100%;
+}
+#login-form form input{
+    margin:10px;
+}
+#day{
+    width:20%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1000px;
+        }
+        p{
+            position: relative;
+            top:40px;
+        }
+        section{
+            width: 400px;
+            height: 300px;
+            border: 2px solid red;
+            position: relative;
+        }
+        h1{
+            position: absolute;
+            top: 50px;
+            color: white;
+            left: 50px;
+        }
+        section>div{
+            position: sticky;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ? static ==> default -->
+    <!-- ? fixed ==> move related to window / don't keep its place  -->
+    <!-- ? Sticky ==> must have parent -->
+    <!-- ? relative ==> move related to its place / keep its place -->
+    <!-- ? absolute ==> must have parent with pos -->
+    <h1>hello</h1>
+    <p>position</p>
+    <h2>footer</h2>
+
+    <section>
+        <img src="./flower.png" alt="">
+        <h1>abs</h1>
+    </section>
+</body>
+</html>

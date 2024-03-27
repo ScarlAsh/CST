@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document two</title>
+    <style>
+        *{
+            background-color: rgb(100, 100, 157);
+        }
+        .container{
+            position: absolute;
+            top: 20vh;
+            left:40vw;
+            display: grid;
+            width: 30vw;
+            height: 50vh;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 5px;
+            transform: rotate(45deg);
+        }
+        .child{
+            background-color: rgb(52, 49, 49);
+            border: 1px solid rgb(53, 52, 52);
+        }
+        .one{
+            grid-row:span 2;
+        }
+        .two{
+            grid-column: span 2;
+        }
+        .five{
+            grid-column:span 2;
+        }
+        .four{
+            grid-row: span 2;
+        }
+        @keyframes rotateAnimation {
+            0% {
+                transform: rotate(0deg); 
+            }
+            25% {
+                transform: rotate(90deg); 
+            }
+            50% {
+                transform: rotate(180deg); 
+            }
+            75% {
+                transform: rotate(270deg); 
+            }
+            100% {
+                transform: rotate(360deg); 
+            }
+        }
+
+    @media screen and (max-width:799px)
+    {
+        *{
+            background-color: aquamarine;
+        }
+        .container{
+            animation: rotateAnimation 6s linear infinite; 
+        }
+        .one{
+            background-color: rgb(179, 46, 46);
+        }
+        .two{
+            background-color: rgb(76, 92, 149);
+        }   
+        .three{
+            background-color: rgb(46, 179, 46);
+        }
+        .four{
+            background-color: rgb(155, 179, 46);
+        }        
+        .five{
+            background-color: rgb(179, 46, 141);
+        }  
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child one"></div>
+        <div class="child two"></div>
+        <div class="child three"></div>
+        <div class="child four"></div>
+        <div class="child five"></div>
+    </div>
+</body>
+</html>

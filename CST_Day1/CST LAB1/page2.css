@@ -1,0 +1,28 @@
+*{
+    background-color: rgb(142, 96, 96);
+}
+
+h1,h2,h3{
+    text-align: center;
+    width: 100%;
+}
+h1{
+    text-decoration: underline;
+}
+h4{
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+#hr1{
+    margin-bottom:2rem;
+}
+#hr2{
+    margin-top:2rem;
+}
+div{
+    width:20%;
+    margin: auto;
+}
+section{
+    text-align: end;
+}

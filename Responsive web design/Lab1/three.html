@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document three</title>
+    <style>
+        *{
+            margin:2px;
+            overflow-x: hidden;
+        }
+        header,footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100px;
+            background-color: orangered;
+        }
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
+        main div{
+            flex-grow: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: green;
+            flex-shrink: 0;
+            width:600px;
+            height: 65vh;
+        }
+        main div:nth-child(2n+1){
+            width:300px;
+            background-color: rgb(103, 103, 163);
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>
+        <div>SideBar</div>
+        <div>MainContent</div>
+        <div>SideBar</div>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>

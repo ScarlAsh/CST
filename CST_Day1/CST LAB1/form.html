@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="https://formspree.io/" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="fisrtname">First Name</label>
+                </td>
+                <td>
+                    <input type="text" id="firstname" name="firstname"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastname">Last Name</label>
+                </td>
+                <td>
+                    <input type="text" id="lastname" name="lastname"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="useremail">User Email</label>
+                </td>
+                <td>
+                    <input type="email" id="useremail" name="useremail">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="userpassword">Password</label>
+                </td>
+                <td>
+                    <input type="password" id="userpassword" name="userpassword">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="radio" id="gender" name="gender">
+                    <label for="gender">Male</label>
+                    <input type="radio" id="gender" name="gender">
+                    <label for="gender">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="country">Country :</label> &ThickSpace;&ThickSpace;
+                    <select name="country" id="country">
+                        <optgroup label="Africa">
+                            <option value="">Eygpt</option>
+                            <option value="">Sudan</option>
+                            <option value="Morocco"></option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="england">England</option>
+                            <option value="france">France</option>
+                            <option value="spain">Spain</option>
+                        </optgroup>
+                    </select>  
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="birthday">Birthday</label>
+                </td>
+                <td>
+                    <!--<select name="month" id="day">
+                        <option value="1">jan</option>
+                        <option value="2">feb</option>
+                        <option value="3">mar</option>
+                        <option value="4">abril</option>
+                        <option value="5">may</option>
+                        <option value="6">june</option>
+                        <option value="7">july</option>
+                        <option value="8">aug</option>
+                        <option value="9">seb</option>
+                        <option value="10">october</option>
+                        <option value="11">nov</option>
+                        <option value="12">dec</option>
+                    </select>-->
+                    <input type="month" start="2023-01" max="2023-10" value="2023-10">
+                    <input type="number" id="day" name="day" value="11" min="1" max="31">
+                    <input type="number" id="year" name="year" value="2023" min="1" max="2023">
+                
+                </td>
+                    <!--<input type="date" name="birthday" id="birthday">-->
+            </tr>
+            <tr>
+                <td>
+                    Interests
+                </td>
+                <td>
+                    <input type="checkbox" id="sports" name="sports">
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" id="music" name="music">
+                    <label for="music">Music</label>
+                    <input type="checkbox" id="books" name="books">
+                    <label for="books">Books</label>
+                </td>
+            </tr>
+
+
+        </table>
+        
+        
+        <br> <br>
+        <button type="submit"> register</button>
+        <button ><a href="page1.html"> home </a></button>
+    </form>
+</body>
+
+<br>
+<br>
+</html>

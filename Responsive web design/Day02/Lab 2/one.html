@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document one</title>
+    <style>
+        * {
+            text-align: center;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            display: grid;
+            width:100%;
+            grid-template-areas:
+            "head head head head"
+            "aside-left article article aside-right"
+            "foot foot foot foot"; 
+        }
+        header,
+        footer {
+            height: 15vh;
+            background-color: orangered;
+        }
+        header {
+            grid-area: head;
+        }
+        footer {
+            grid-area: foot;
+        }
+        aside {
+            background-color: green;
+        }
+        article {
+            background-color: blue;
+            grid-area: article;
+        }
+        .left {
+            grid-area: aside-left; 
+        }
+        .right {
+            grid-area: aside-right; 
+        }
+        main {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-areas: "aside-left article aside-right"; 
+            justify-items: stretch; 
+            align-items: stretch;
+            height: 70vh; 
+            width: 100vw;
+        }
+        @media screen and (max-width:799px){
+            main{
+                grid-template-areas: 
+                "aside-left"
+                "article"
+                "aside-right";
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <main>
+            <aside class="left">side left</aside>
+            <article>middle</article>
+            <aside class="right">side right</aside>
+        </main>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

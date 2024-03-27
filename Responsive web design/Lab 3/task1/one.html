@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document one</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            overflow-x: hidden;
+        }
+        /* Custom CSS to style the navbar */
+        .navbar {
+          background-color: black; /* Black background */
+        }
+        .navbar-nav {
+          margin: auto; /* Centering the navbar items */
+          text-align: center; /* Centering the text */
+        }
+        .navbar-nav .nav-item {
+        display: block;
+        }
+        .navbar-expand .navbar-nav .nav-item {
+        display: inline-block;
+          margin: 0 5px; /* Add some margin between navbar items */
+        }
+        h1,h2,h3,h4,h5,h6{
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+<body class="bg-light">
+    <div class="container">
+        <h3>The Flower Blog</h3>
+    </div>
+    <!--start nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item mx-5">
+            <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item mx-5">
+            <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="#"><img src="./Images/rss.png">Subscribe via RSS</a>
+                </li>
+        </ul>
+        </div>
+    </nav>
+    <!--end nav-->
+    
+    <section class="container row m-auto position-relative py-5">
+        <div class="position-absolute top-0 start-50 translate-middle-x col-4 mx-5 my-3 text-white" style="z-index:1;">
+            <h4 style="overflow: hidden;">Do you love flowers as much as we do?</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut.</p>
+            
+        </div>
+        <img src="./Images/intro_flower.png" alt="Flower" class="col-12 rounded-25" style="z-index:0;"/>
+    </section>
+
+    <div class="container">
+        <div class="row">
+        <article class="col-12 col-lg-8">
+            <h4 class="text-dark overflow-hidden">This is the title of a blog post</h4>
+            <p class="my-5">Posted on June 29th 2009 by Mads Kjaer - 3 comments</p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tellus eu orci imperdiet nec rutrum lacus blandit. Cras enim nibh, sodales ultricies elementum vel, fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio. Curabitur in odio augue. Morbi congue auctor interdum. Phasellus sit amet metus justo. Phasellus vitae tellus orci, at elementum ipsum. In in quam eget diam adipiscing condimentum. Maecenas gravida diam vitae nisi convallis vulputate quis sit amet nibh. Nullam ut velit tortor. Curabitur ut elit id nisl volutpat consectetur ac ac lorem. Quisque non elit et elit lacinia lobortis nec a velit. Sed ac nisl sed enim consequat porttitor.
+            <img src="./Images/flower.png" alt="" class="my-3">
+            <p>This is a beautiful flower</p>
+            <p mb-5>Pellentesque ut sapien arcu, egestas mollis massa. Fusce lectus leo, fringilla at aliquet sit amet, volutpat non erat. Aenean molestie nibh vitae turpis venenatis vel accumsan nunc tincidunt. Suspendisse id purus vel felis auctor mattis non ac erat. Pellentesque sodales venenatis condimentum. Aliquam sit amet nibh nisi, ut pulvinar est. Sed ullamcorper nisi vel tortor volutpat eleifend. Vestibulum iaculis ullamcorper diam consectetur sagittis. Quisque vitae mauris ut elit semper condimentum varius nec nisl. Nulla tempus porttitor dolor ac eleifend. Proin vitae purus lectus, a hendrerit ipsum. Aliquam mattis lacinia risus in blandit.</p>
+
+                <p class="mb-5">Vivamus vitae nulla dolor. Suspendisse eu lacinia justo. Vestibulum a felis ante, non aliquam leo. Aliquam eleifend, est viverra semper luctus, metus purus commodo elit, a elementum nisi lectus vel magna. Praesent faucibus leo sit amet arcu vehicula sed facilisis eros aliquet. Etiam sodales, enim sit amet mollis vestibulum, ipsum sapien accumsan lectus, eget ultricies arcu velit ut diam. Aenean fermentum luctus nulla, eu malesuada urna consequat in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque massa lacus, sodales id facilisis ac, lobortis sed arcu. Donec hendrerit fringilla ligula, ac rutrum nulla bibendum id. Cras sapien ligula, tincidunt eget euismod nec, ultricies eu augue. Nulla vitae velit sollicitudin magna mattis eleifend. Nam enim justo, vulputate vitae pretium ac, rutrum at turpis. Aenean id magna neque. Sed rhoncus aliquet viverra.
+                    <br>
+                    <img src="./Images/sidebar_background.png" alt="">
+                    <h6 class="overflow-hidden">comments</h6>
+
+                    <div id="accordion">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <p>George Washington</p> 
+                                on June 29th 2009 at 23:35
+                              </button>
+                            </h5>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tenetur corporis, laudantium earum eaque velit dolor deserunt rerum porro maiores.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Barack Obama
+on June 29th 2009 at 23:59
+                            </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum sapiente vel et possimus quibusdam sint tenetur exercitationem nisi ducimus, quaerat, quia libero id ipsa animi doloribus? Temporibus impedit error placeat.
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Benjamin Franklin
+on June 29th 2009 at 23:40
+                            </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi ut odit vel dolorum ducimus ipsa et incidunt aperiam iusto, consequuntur ad expedita, quas velit voluptate ullam sapiente cum, doloremque repellendus consectetur quis neque perspiciatis aliquam. Illum eum autem obcaecati provident!
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <img src="./Images/sidebar_background.png" alt="">
+
+                    <div class="container mt-5">
+                        <h2 class="overflow-hidden">Form</h2>
+                        <form>
+                          <div class="form-group">
+                            <label for="exampleInputName">Name</label>
+                            <input type="text" class="form-control" id="exampleInputName" placeholder="Enter your name">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleTextarea">Message</label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Enter your message"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                      </div>
+
+                </article>
+                <img src="./Images/sidebar_section_background.png" alt="">
+                <aside class="col-12 col-lg-3">
+
+                    <div class="row mx-5">
+                        <h5 class="overflow-hidden">Categories</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, unde?</p>
+                    </div>
+                    <div class="row mt-5 mx-5">
+                        <h5 class="overflow-hidden">Archives</h5>
+                        <ol class="list-group">
+                        <li class="list-group-item">December 2008</li>
+                        <li class="list-group-item">January 2009</li>
+                        <li class="list-group-item">February 2009</li>
+                          <li class="list-group-item">March 2009</li>
+                          <li class="list-group-item">April 2009</li>
+                          <li class="list-group-item">May 2009</li>
+                          <li class="list-group-item">June 2009</li>
+                        </ol>
+                      </div>
+                </aside>
+        </div>
+    </div>
+
+    <footer class="px-5 py-5 bg-dark mt-5">
+        <div class="row">
+            <section class="col-12 col-lg-4">
+                <header>
+                    <h3>
+                        About</h3>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco <a href="#">laboris nisi ut aliquip</a> ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <section class="col-12 col-lg-4">
+                <header>
+                    <h3>
+                        Blogroll</h3>
+                </header>
+                <ul>
+                    <li><a href="#">NETTUTS+</a></li>
+                    <li><a href="#">FreelanceSwitch</a></li>
+                    <li><a href="#">In The Woods</a></li>
+                    <li><a href="#">Netsetter</a></li>
+                    <li><a href="#">PSDTUTS+</a></li>
+                </ul>
+            </section>
+            <section class="col-12 col-lg-4">
+                <header>
+                    <h3>
+                        Popular</h3>
+                </header>
+                <ul>
+                    <li><a href="#">This is the title of a blog post</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Consectetur adipisicing elit, sed do eiusmod</a></li>
+                    <li><a href="#">Duis aute irure dolor</a></li>
+                    <li><a href="#">Excepteur sint occaecat cupidatat</a></li>
+                    <li><a href="#">Reprehenderit in voluptate velit</a></li>
+                    <li><a href="#">Officia deserunt mollit anim id est laborum</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

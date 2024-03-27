@@ -1,0 +1,13 @@
+*{
+    background-color: rgb(195, 195, 88);
+}
+
+div{
+    width: 80%;
+    margin: auto;
+}
+#copyrights{
+    margin-top:1rem;
+    width: 100%;
+    text-align: center;
+}

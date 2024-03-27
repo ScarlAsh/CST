@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color changing text</title>
+</head>
+<body>
+    <div style="width:800px;margin:auto;">
+
+        Red : &ThickSpace; <input type="range" id="red" min="0" max="255" step="1" value="0">
+        Blue : &ThickSpace; <input type="range" id="blue" min="0" max="255" step="1" value="0">
+        Green : &ThickSpace; <input type="range" id="green" min="0" max="255" step="1" value="0">
+
+    </div>
+    <br/><br/><br/><br/><br/><br/>
+    <p style="width:600px;margin:auto;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat vitae asperiores accusamus iusto nihil distinctio itaque tenetur illo minus tempore a eligendi, aliquam molestiae totam saepe. Ex quos neque eligendi illo quo, exercitationem nemo! Possimus enim quidem et ipsam debitis?
+    </p>
+<script>
+    var red = document.getElementById("red");
+    var blue = document.getElementById("blue");
+    var green = document.getElementById("green");
+    var par = document.getElementsByTagName("p")[0];
+    var redcolor = parseInt(red.value);;
+    var bluecolor = parseInt(blue.value);;
+    var greencolor = parseInt(green.value);;
+    red.oninput = function()
+    {
+        redcolor = parseInt(red.value);
+        par.style.color = `rgb(${redcolor},${bluecolor},${greencolor})`;
+    }
+    blue.oninput = function()
+    {
+        bluecolor = parseInt(blue.value);
+        par.style.color = `rgb(${redcolor},${bluecolor},${greencolor})`;
+    }
+    green.oninput = function()
+    {
+        greencolor = parseInt(green.value);
+        par.style.color = `rgb(${redcolor},${bluecolor},${greencolor})`;
+    }
+</script>
+</body>
+</html>
