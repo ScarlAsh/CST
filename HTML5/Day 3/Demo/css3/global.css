@@ -1,8 +1,0 @@
-@font-face {
-  font-family: poppins;
-  src: url('./poppins/Poppins-Regular.ttf');
-}
-
-span {
-  font-family: poppins, 'Courier New', Courier, monospace;
-}
